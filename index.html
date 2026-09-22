@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mercado Mix</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="glass">
+
+    <div class="logo">
+      🛒 Mercado Mix
+    </div>
+
+    <div class="search">
+      <input id="busca" type="text" placeholder="Buscar produtos...">
+
+      <button onclick="buscar()">
+        🔎
+      </button>
+    </div>
+
+    <button class="account-btn" onclick="abrirLogin()">
+      👤 <span id="contaTexto">Entrar</span>
+    </button>
+
+    <button class="cart-btn" onclick="abrirCarrinho()">
+      🛒 Carrinho
+      <span id="contador">0</span>
+    </button>
+
+  </header>
+
+
+  <!-- CATEGORIAS -->
+
+  <nav class="categories glass">
+
+    <button onclick="filtrar('Todos')">
+      Todos
+    </button>
+
+    <button onclick="mostrarFavoritos()">
+      ❤️ Favoritos
+      <span id="contadorFavoritos">0</span>
+    </button>
+
+    <button onclick="filtrar('Frutas')">
+      🍎 Frutas
+    </button>
+
+    <button onclick="filtrar('Verduras')">
+      🥬 Verduras
+    </button>
+
+    <button onclick="filtrar('Carnes')">
+      🥩 Carnes
+    </button>
+
+    <button onclick="filtrar('Bebidas')">
+      🥤 Bebidas
+    </button>
+
+    <button onclick="filtrar('Limpeza')">
+      🧹 Limpeza
+    </button>
+
+    <button onclick="filtrar('Banheiro')">
+      🚿 Banheiro
+    </button>
+
+    <button onclick="filtrar('Padaria')">
+      🥖 Padaria
+    </button>
+
+    <button onclick="filtrar('Mercearia')">
+      🛍️ Mercearia
+    </button>
+
+    <button onclick="filtrar('Pet')">
+      🐶 Pet
+    </button>
+
+  </nav>
+
+
+  <main>
+
+    <section class="hero glass">
+
+      <div>
+
+        <p class="tag">
+          OFERTAS DO DIA
+        </p>
+
+        <h1>
+          Seu mercado completo, moderno e fácil de usar.
+        </h1>
+
+        <p>
+          Escolha seus produtos, adicione ao carrinho
+          e confira o total na hora.
+        </p>
+
+        <button class="primary" onclick="filtrar('Todos')">
+          Ver produtos
+        </button>
+
+      </div>
+
+      <div class="hero-icon">
+        🛍️
+      </div>
+
+    </section>
+
+
+    <section class="section-head">
+
+      <div>
+
+        <h2 id="titulo">
+          Todos os produtos
+        </h2>
+
+        <p id="quantidade"></p>
+
+      </div>
+
+    </section>
+
+
+    <section id="produtos" class="grid"></section>
+
+  </main>
+
+
+  <!-- LOGIN -->
+
+  <div id="loginModal" class="modal hidden"
+       onclick="fecharLogin(event)">
+
+    <div class="login glass"
+         onclick="event.stopPropagation()">
+
+      <button class="close" onclick="fecharLogin()">
+        ✕
+      </button>
+
+      <div class="login-icon">
+        👤
+      </div>
+
+      <h2 id="loginTitulo">
+        Entrar na conta
+      </h2>
+
+      <p id="loginSubtitulo">
+        Entre para efetivar sua conta e finalizar suas compras.
+      </p>
+
+
+      <form id="loginForm" onsubmit="entrarConta(event)">
+
+        <label>
+          E-mail
+        </label>
+
+        <input
+          id="loginEmail"
+          type="email"
+          placeholder="seu@email.com"
+          required
+        >
+
+        <label>
+          Senha
+        </label>
+
+        <input
+          id="loginSenha"
+          type="password"
+          placeholder="Sua senha"
+          minlength="4"
+          required
+        >
+
+        <button class="primary login-submit" type="submit">
+          Entrar
+        </button>
+
+      </form>
+
+
+      <button class="link-btn" onclick="alternarCadastro()">
+        Ainda não tenho conta
+      </button>
+
+      <button
+        class="link-btn hidden"
+        id="voltarLogin"
+        onclick="alternarCadastro()">
+        Já tenho uma conta
+      </button>
+
+
+      <form
+        id="cadastroForm"
+        class="hidden"
+        onsubmit="criarConta(event)">
+
+        <label>
+          Nome
+        </label>
+
+        <input
+          id="cadNome"
+          type="text"
+          placeholder="Seu nome"
+          required
+        >
+
+        <label>
+          E-mail
+        </label>
+
+        <input
+          id="cadEmail"
+          type="email"
+          placeholder="seu@email.com"
+          required
+        >
+
+        <label>
+          Senha
+        </label>
+
+        <input
+          id="cadSenha"
+          type="password"
+          placeholder="Crie uma senha"
+          minlength="4"
+          required
+        >
+
+        <button class="primary login-submit" type="submit">
+          Criar conta
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+
+  <!-- CARRINHO -->
+
+  <div
+    id="modal"
+    class="modal hidden"
+    onclick="fecharCarrinho(event)">
+
+    <div
+      class="cart glass"
+      onclick="event.stopPropagation()">
+
+      <button class="close" onclick="fecharCarrinho()">
+        ✕
+      </button>
+
+      <h2>
+        🛒 Seu carrinho
+      </h2>
+
+      <div id="itensCarrinho"></div>
+
+      <div class="total">
+
+        <span>
+          Total
+        </span>
+
+        <strong id="total">
+          R$ 0,00
+        </strong>
+
+      </div>
+
+      <button
+        class="primary checkout"
+        onclick="finalizarCompra()">
+
+        Finalizar compra
+
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <div id="toast"></div>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
