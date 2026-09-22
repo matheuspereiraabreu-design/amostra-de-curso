@@ -795,8 +795,11 @@ main {
 @media(max-width:700px) {
 
   header {
+    position: relative;
+    top: auto;
     gap: 10px;
     padding: 12px;
+    overflow: hidden;
   }
 
   .logo {
@@ -867,7 +870,6 @@ main {
 @media(max-width:430px) {
 
   header {
-    top: 6px;
     margin: 6px auto;
   }
 
