@@ -17,11 +17,9 @@ body {
   overflow-x: hidden;
 
   /* Fundo parado */
-  background: linear-gradient(
-    135deg,
-    #b8f2e6,
-    #c7d2fe
-  );
+  background: linear-gradient(135deg,
+      #b8f2e6,
+      #c7d2fe);
 
   transition: background 0.8s ease;
 
@@ -91,7 +89,7 @@ header {
 
   border-radius: 14px 0 0 14px;
 
-  background: rgba(255,255,255,.72);
+  background: rgba(255, 255, 255, .72);
 
   font-size: 15px;
 }
@@ -145,7 +143,7 @@ header {
 .account-btn {
   border: 0;
 
-  background: rgba(255,255,255,.65);
+  background: rgba(255, 255, 255, .65);
 
   color: #27324a;
 
@@ -195,7 +193,7 @@ header {
 
   border-radius: 12px;
 
-  background: rgba(255,255,255,.58);
+  background: rgba(255, 255, 255, .58);
 
   cursor: pointer;
 
@@ -252,7 +250,7 @@ main {
   min-height: 260px;
 }
 
-.hero > div:first-child {
+.hero>div:first-child {
   min-width: 0;
 }
 
@@ -292,9 +290,7 @@ main {
   font-size: 110px;
 
   filter:
-    drop-shadow(
-      0 20px 15px rgba(0,0,0,.12)
-    );
+    drop-shadow(0 20px 15px rgba(0, 0, 0, .12));
 }
 
 
@@ -321,10 +317,8 @@ main {
   display: grid;
 
   grid-template-columns:
-    repeat(
-      auto-fit,
-      minmax(190px,1fr)
-    );
+    repeat(auto-fit,
+      minmax(190px, 1fr));
 
   gap: 18px;
 }
@@ -333,15 +327,15 @@ main {
 /* CARD */
 
 .card {
-  background: rgba(255,255,255,.72);
+  background: rgba(255, 255, 255, .72);
 
   border-radius: 24px;
 
   padding: 17px;
 
   box-shadow:
-    8px 8px 20px rgba(50,50,93,.09),
-    -6px -6px 18px rgba(255,255,255,.55);
+    8px 8px 20px rgba(50, 50, 93, .09),
+    -6px -6px 18px rgba(255, 255, 255, .55);
 
   transition: .25s;
 
@@ -354,7 +348,7 @@ main {
   transform: translateY(-6px);
 
   box-shadow:
-    12px 16px 28px rgba(50,50,93,.14);
+    12px 16px 28px rgba(50, 50, 93, .14);
 }
 
 
@@ -366,11 +360,9 @@ main {
   border-radius: 18px;
 
   background:
-    linear-gradient(
-      145deg,
-      rgba(255,255,255,.9),
-      rgba(220,225,240,.65)
-    );
+    linear-gradient(145deg,
+      rgba(255, 255, 255, .9),
+      rgba(220, 225, 240, .65));
 
   display: flex;
 
@@ -422,7 +414,7 @@ main {
 
   border-radius: 50%;
 
-  background: rgba(255,255,255,.85);
+  background: rgba(255, 255, 255, .85);
 
   font-size: 20px;
 
@@ -433,7 +425,7 @@ main {
   transition: .2s;
 
   box-shadow:
-    0 4px 12px rgba(0,0,0,.12);
+    0 4px 12px rgba(0, 0, 0, .12);
 }
 
 .favorite-btn:hover {
@@ -552,7 +544,7 @@ main {
 
   inset: 0;
 
-  background: rgba(15,23,42,.35);
+  background: rgba(15, 23, 42, .35);
 
   z-index: 20;
 
@@ -571,7 +563,7 @@ main {
 /* CARRINHO */
 
 .cart {
-  width: min(430px,94vw);
+  width: min(430px, 94vw);
 
   height: 100%;
   max-height: 100dvh;
@@ -588,7 +580,7 @@ main {
 
   border: 0;
 
-  background: rgba(255,255,255,.7);
+  background: rgba(255, 255, 255, .7);
 
   border-radius: 50%;
 
@@ -612,7 +604,7 @@ main {
   padding: 12px 0;
 
   border-bottom:
-    1px solid rgba(0,0,0,.08);
+    1px solid rgba(0, 0, 0, .08);
 }
 
 .cart-item .emoji {
@@ -657,7 +649,7 @@ main {
 /* LOGIN */
 
 .login {
-  width: min(430px,94vw);
+  width: min(430px, 94vw);
 
   padding: 30px;
 
@@ -686,7 +678,7 @@ main {
   margin-bottom: 7px;
 }
 
-.login > p {
+.login>p {
   text-align: center;
 
   color: var(--muted);
@@ -709,21 +701,20 @@ main {
 
   padding: 13px 14px;
 
-  border: 1px solid rgba(0,0,0,.08);
+  border: 1px solid rgba(0, 0, 0, .08);
 
   outline: 0;
 
   border-radius: 13px;
 
-  background: rgba(255,255,255,.8);
+  background: rgba(255, 255, 255, .8);
 
   font-size: 15px;
 }
 
 .login input:focus {
   box-shadow:
-    0 0 0 3px
-    rgba(108,92,231,.18);
+    0 0 0 3px rgba(108, 92, 231, .18);
 
   border-color: var(--accent);
 }
@@ -761,8 +752,7 @@ main {
   left: 50%;
 
   transform:
-    translateX(-50%)
-    translateY(100px);
+    translateX(-50%) translateY(100px);
 
   background: #172033;
 
@@ -785,34 +775,147 @@ main {
 
 #toast.show {
   transform:
-    translateX(-50%)
-    translateY(0);
+    translateX(-50%) translateY(0);
 }
 
 
 /* RESPONSIVO */
 
-@media(max-width:700px) {
+@media (max-width: 900px) {
+
+  header {
+    width: calc(100% - 20px);
+    padding: 10px 12px;
+    gap: 8px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .search {
+    max-width: none;
+    min-width: 0;
+  }
+
+  .search input {
+    padding: 11px 12px;
+    font-size: 13px;
+  }
+
+  .search button {
+    padding: 0 12px;
+  }
+
+  .account-btn,
+  .cart-btn {
+    padding: 10px 11px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+}
+
+/* CELULAR */
+
+@media (max-width: 700px) {
 
   header {
     position: relative;
     top: auto;
-    gap: 10px;
-    padding: 12px;
+
+    width: calc(100% - 12px);
+    margin: 6px auto;
+
+    padding: 9px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    gap: 6px;
+
     overflow: hidden;
+
   }
+
+  /* LOGO */
 
   .logo {
-    flex: 1;
-    font-size: 12px;
+    flex: 0 0 auto;
+    font-size: 14px;
   }
+
+  /* BUSCA */
 
   .search {
-    order: 3;
+    order: initial;
 
-    flex-basis: 100%;
-    max-width: none;
+    flex: 1 1 auto;
+    min-width: 0;
+
+    margin: 0;
+
   }
+
+  .search input {
+    min-width: 0;
+
+    padding: 10px 9px;
+
+    font-size: 12px;
+
+  }
+
+  .search button {
+    padding: 0 10px;
+  }
+
+  /* CONTA */
+
+  .account-btn {
+    order: initial;
+
+    flex: 0 0 auto;
+
+    padding: 10px;
+
+    font-size: 0;
+
+  }
+
+  .account-btn::before {
+    content: "👤";
+    font-size: 17px;
+  }
+
+  /* CARRINHO */
+
+  .cart-btn {
+    order: initial;
+
+    flex: 0 0 auto;
+
+    padding: 10px;
+
+    font-size: 0;
+
+  }
+
+  .cart-btn::before {
+    content: "🛒";
+    font-size: 17px;
+  }
+
+  .cart-btn span {
+    font-size: 11px;
+
+    padding: 2px 5px;
+
+    margin-left: 2px;
+
+  }
+
+  /* HERO */
 
   .hero {
     padding: 25px;
@@ -823,26 +926,17 @@ main {
     display: none;
   }
 
-  .grid {
-    grid-template-columns:
-      repeat(2,1fr);
-  }
-
-  .account-btn {
-    order: 2;
-    padding: 10px 12px;
-  }
-
-  .cart-btn {
-    order: 1;
-    padding: 10px 12px;
-  }
+  /* CATEGORIAS */
 
   .categories {
     justify-content: flex-start;
+
     flex-wrap: nowrap;
+
     overflow-x: auto;
+
     scrollbar-width: thin;
+
   }
 
   .categories button {
@@ -853,39 +947,69 @@ main {
     font-size: 24px;
   }
 
+  /* CARRINHO */
+
   .cart {
     width: min(430px, 100vw);
     padding: 22px 18px;
     border-radius: 0;
   }
 
+  /* LOGIN */
+
   .login {
     width: calc(100vw - 24px);
     padding: 24px 18px;
   }
-
 }
 
+/* CELULARES PEQUENOS */
 
-@media(max-width:430px) {
+@media (max-width: 430px) {
 
   header {
-    margin: 6px auto;
+    width: calc(100% - 8px);
+
+    padding: 7px;
+
+    gap: 5px;
+
+    border-radius: 17px;
+
+  }
+
+  .logo {
+    font-size: 11px;
+  }
+
+  .search input {
+    padding: 9px 7px;
+
+    font-size: 11px;
+
+  }
+
+  .search button {
+    padding: 0 8px;
+
+    font-size: 12px;
+
   }
 
   .account-btn,
   .cart-btn {
-    font-size: 0;
-    padding: 10px;
-  }
+    padding: 8px;
 
-  .account-btn:first-letter,
-  .cart-btn:first-letter {
-    font-size: 18px;
+    min-width: 34px;
+    min-height: 34px;
+
   }
 
   .cart-btn span {
-    font-size: 12px;
+    font-size: 10px;
+
+    padding: 1px 4px;
+
   }
 
   main {
@@ -894,7 +1018,9 @@ main {
 
   .hero {
     border-radius: 22px;
+
     padding: 22px 18px;
+
   }
 
   .hero h1 {
@@ -910,7 +1036,6 @@ main {
   }
 
   .categories {
-    width: calc(100% - 20px);
+    width: calc(100% - 10px);
   }
-
 }
