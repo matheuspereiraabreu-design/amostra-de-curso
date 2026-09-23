@@ -314,13 +314,10 @@ main {
 /* PRODUTOS */
 
 .grid {
-  display: grid;
-
-  grid-template-columns:
-    repeat(auto-fit,
-      minmax(190px, 1fr));
-
-  gap: 18px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 20px;
+    align-items: start;
 }
 
 
@@ -776,6 +773,23 @@ main {
 #toast.show {
   transform:
     translateX(-50%) translateY(0);
+}
+
+/* Favoritos com o mesmo tamanho dos produtos normais */
+#produtos.grid {
+    align-items: start;
+}
+
+#produtos .card {
+    height: auto;
+    min-height: 0;
+    align-self: start;
+}
+
+/* Mantém o tamanho padrão dos cards */
+#produtos .card .product-img {
+    height: 150px;
+    flex-shrink: 0;
 }
 
 
