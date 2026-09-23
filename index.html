@@ -12,9 +12,9 @@
 
   <header class="glass">
 
-    <div class="logo">
-      🛒 Mercado Mix
-    </div>
+ <div class="logo">
+  <img src="logo.png" alt="Mercado Mix">
+</div>
 
     <div class="search">
       <input id="busca" type="text" placeholder="Buscar produtos...">
@@ -92,32 +92,54 @@
 
     <section class="hero glass">
 
-      <div>
+  <button class="carousel-btn prev" onclick="mudarOferta(-1)">
+    ❮
+  </button>
 
-        <p class="tag">
-          OFERTAS DO DIA
-        </p>
+  <div class="carousel-content">
 
-        <h1>
-          Seu mercado completo, moderno e fácil de usar.
-        </h1>
+    <p class="tag">
+      🏷️ OFERTA ESPECIAL
+    </p>
 
-        <p>
-          Escolha seus produtos, adicione ao carrinho
-          e confira o total na hora.
-        </p>
+    <div id="ofertaEmoji" class="oferta-emoji">
+      🥬
+    </div>
 
-        <button class="primary" onclick="filtrar('Todos')">
-          Ver produtos
-        </button>
+    <h1 id="ofertaNome">
+      Alface
+    </h1>
 
-      </div>
+    <div class="oferta-precos">
 
-      <div class="hero-icon">
-        🛍️
-      </div>
+      <span id="ofertaPrecoAntigo" class="preco-antigo">
+        R$ 3,99
+      </span>
 
-    </section>
+      <span id="ofertaPreco" class="preco-oferta">
+        R$ 2,99
+      </span>
+
+    </div>
+
+    <button
+      id="ofertaBotao"
+      class="primary"
+      onclick="adicionarOferta()">
+
+      🛒 Adicionar ao carrinho
+
+    </button>
+
+  </div>
+
+  <button class="carousel-btn next" onclick="mudarOferta(1)">
+    ❯
+  </button>
+
+  <div id="indicadores" class="indicadores"></div>
+
+</section>
 
 
     <section class="section-head">

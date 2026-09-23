@@ -1,101 +1,101 @@
 const produtos = [
 
-  {id:1,nome:"Maçã",cat:"Frutas",preco:7.99,emoji:"🍎"},
-  {id:2,nome:"Maçã Verde",cat:"Frutas",preco:8.49,emoji:"🍏"},
-  {id:3,nome:"Laranja",cat:"Frutas",preco:6.99,emoji:"🍊"},
-  {id:4,nome:"Tangerina",cat:"Frutas",preco:7.49,emoji:"🍊"},
-  {id:5,nome:"Melancia",cat:"Frutas",preco:12.90,emoji:"🍉"},
-  {id:6,nome:"Abacaxi",cat:"Frutas",preco:8.50,emoji:"🍍"},
+  { id: 1, nome: "Maçã", cat: "Frutas", preco: 7.99, emoji: "🍎" },
+  { id: 2, nome: "Maçã Verde", cat: "Frutas", preco: 8.49, emoji: "🍏" },
+  { id: 3, nome: "Laranja", cat: "Frutas", preco: 6.99, emoji: "🍊" },
+  { id: 4, nome: "Tangerina", cat: "Frutas", preco: 7.49, emoji: "🍊" },
+  { id: 5, nome: "Melancia", cat: "Frutas", preco: 12.90, emoji: "🍉" },
+  { id: 6, nome: "Abacaxi", cat: "Frutas", preco: 8.50, emoji: "🍍" },
 
-  {id:7,nome:"Alface",cat:"Verduras",preco:3.99,precoOferta:2.99,emoji:"🥬"},
-  {id:8,nome:"Tomate",cat:"Verduras",preco:6.49,emoji:"🍅"},
-  {id:9,nome:"Cenoura",cat:"Verduras",preco:4.79,precoOferta:3.49,emoji:"🥕"},
-  {id:10,nome:"Batata",cat:"Verduras",preco:5.99,emoji:"🥔"},
+  { id: 7, nome: "Alface", cat: "Verduras", preco: 3.99, precoOferta: 2.99, emoji: "🥬" },
+  { id: 8, nome: "Tomate", cat: "Verduras", preco: 6.49, emoji: "🍅" },
+  { id: 9, nome: "Cenoura", cat: "Verduras", preco: 4.79, precoOferta: 3.49, emoji: "🥕" },
+  { id: 10, nome: "Batata", cat: "Verduras", preco: 5.99, emoji: "🥔" },
 
-  {id:11,nome:"Carne bovina",cat:"Carnes",preco:39.90,precoOferta:34.90,emoji:"🥩"},
-  {id:12,nome:"Carne suína",cat:"Carnes",preco:24.90,emoji:"🥩"},
-  {id:13,nome:"Frango",cat:"Carnes",preco:14.90,emoji:"🍗"},
-  {id:14,nome:"Peito de frango",cat:"Carnes",preco:18.90,emoji:"🍗"},
-  {id:15,nome:"Peixe",cat:"Carnes",preco:29.90,emoji:"🐟"},
-  {id:16,nome:"Salmão",cat:"Carnes",preco:49.90,emoji:"🐟"},
-  {id:17,nome:"Lula",cat:"Carnes",preco:34.90,emoji:"🦑"},
-  {id:18,nome:"Camarão",cat:"Carnes",preco:59.90,emoji:"🦐"},
+  { id: 11, nome: "Carne bovina", cat: "Carnes", preco: 39.90, precoOferta: 34.90, emoji: "🥩" },
+  { id: 12, nome: "Carne suína", cat: "Carnes", preco: 24.90, emoji: "🥩" },
+  { id: 13, nome: "Frango", cat: "Carnes", preco: 14.90, emoji: "🍗" },
+  { id: 14, nome: "Peito de frango", cat: "Carnes", preco: 18.90, emoji: "🍗" },
+  { id: 15, nome: "Peixe", cat: "Carnes", preco: 29.90, emoji: "🐟" },
+  { id: 16, nome: "Salmão", cat: "Carnes", preco: 49.90, emoji: "🐟" },
+  { id: 17, nome: "Lula", cat: "Carnes", preco: 34.90, emoji: "🦑" },
+  { id: 18, nome: "Camarão", cat: "Carnes", preco: 59.90, emoji: "🦐" },
 
-  {id:19,nome:"Leite",cat:"Bebidas",preco:5.49,emoji:"🥛"},
-  {id:20,nome:"Leite achocolatado",cat:"Bebidas",preco:6.99,emoji:"🥛"},
-  {id:21,nome:"Refrigerante",cat:"Bebidas",preco:7.99,emoji:"🥤"},
-  {id:22,nome:"Guaraná",cat:"Bebidas",preco:7.49,emoji:"🥤"},
-  {id:23,nome:"Chá gelado",cat:"Bebidas",preco:6.49,emoji:"🧋"},
-  {id:24,nome:"Suco de laranja",cat:"Bebidas",preco:8.49,emoji:"🧃"},
-  {id:25,nome:"Suco de uva",cat:"Bebidas",preco:8.99,emoji:"🧃"},
-  {id:26,nome:"Água mineral",cat:"Bebidas",preco:2.49,emoji:"💧"},
-  {id:27,nome:"Água com gás",cat:"Bebidas",preco:3.49,emoji:"💧"},
-  {id:28,nome:"Café",cat:"Bebidas",preco:12.90,emoji:"☕"},
-  {id:29,nome:"Vinho",cat:"Bebidas",preco:29.90,emoji:"🍾"},
+  { id: 19, nome: "Leite", cat: "Bebidas", preco: 5.49, emoji: "🥛" },
+  { id: 20, nome: "Leite achocolatado", cat: "Bebidas", preco: 6.99, emoji: "🥛" },
+  { id: 21, nome: "Refrigerante", cat: "Bebidas", preco: 7.99, emoji: "🥤" },
+  { id: 22, nome: "Guaraná", cat: "Bebidas", preco: 7.49, emoji: "🥤" },
+  { id: 23, nome: "Chá gelado", cat: "Bebidas", preco: 6.49, emoji: "🧋" },
+  { id: 24, nome: "Suco de laranja", cat: "Bebidas", preco: 8.49, emoji: "🧃" },
+  { id: 25, nome: "Suco de uva", cat: "Bebidas", preco: 8.99, emoji: "🧃" },
+  { id: 26, nome: "Água mineral", cat: "Bebidas", preco: 2.49, emoji: "💧" },
+  { id: 27, nome: "Água com gás", cat: "Bebidas", preco: 3.49, emoji: "💧" },
+  { id: 28, nome: "Café", cat: "Bebidas", preco: 12.90, emoji: "☕" },
+  { id: 29, nome: "Vinho", cat: "Bebidas", preco: 29.90, emoji: "🍾" },
 
-  {id:30,nome:"Detergente",cat:"Limpeza",preco:2.99,precoOferta:1.99,emoji:"🧴"},
-  {id:31,nome:"Sabão em pó",cat:"Limpeza",preco:12.90,emoji:"🫧"},
-  {id:32,nome:"Vassoura",cat:"Limpeza",preco:18.90,emoji:"🧹"},
-  {id:33,nome:"Esponja",cat:"Limpeza",preco:16.50,emoji:"🧽"},
-  {id:34,nome:"Desentupidor",cat:"Limpeza",preco:9.90,emoji:"🪠"},
-  {id:35,nome:"Balde",cat:"Limpeza",preco:14.90,emoji:"🪣"},
+  { id: 30, nome: "Detergente", cat: "Limpeza", preco: 2.99, precoOferta: 1.99, emoji: "🧴" },
+  { id: 31, nome: "Sabão em pó", cat: "Limpeza", preco: 12.90, emoji: "🫧" },
+  { id: 32, nome: "Vassoura", cat: "Limpeza", preco: 18.90, emoji: "🧹" },
+  { id: 33, nome: "Esponja", cat: "Limpeza", preco: 16.50, emoji: "🧽" },
+  { id: 34, nome: "Desentupidor", cat: "Limpeza", preco: 9.90, emoji: "🪠" },
+  { id: 35, nome: "Balde", cat: "Limpeza", preco: 14.90, emoji: "🪣" },
 
-  {id:36,nome:"Papel higiênico",cat:"Banheiro",preco:15.90,emoji:"🧻"},
-  {id:37,nome:"Shampoo",cat:"Banheiro",preco:13.99,emoji:"🧴"},
-  {id:38,nome:"Sabonete",cat:"Banheiro",preco:3.49,precoOferta:2.49,emoji:"🧼"},
-  {id:39,nome:"Condicionador",cat:"Banheiro",preco:14.99,emoji:"🚿"},
-  {id:40,nome:"Creme dental",cat:"Banheiro",preco:6.99,emoji:"🪥"},
-  {id:41,nome:"Banheira para bebê",cat:"Banheiro",preco:89.90,emoji:"🛁"},
-  {id:42,nome:"Toalha de bebê",cat:"Banheiro",preco:29.90,emoji:"🛁"},
-  {id:43,nome:"Shampoo para bebê",cat:"Banheiro",preco:16.90,emoji:"🧴"},
-  {id:44,nome:"Sabonete para bebê",cat:"Banheiro",preco:5.90,emoji:"🧼"},
+  { id: 36, nome: "Papel higiênico", cat: "Banheiro", preco: 15.90, emoji: "🧻" },
+  { id: 37, nome: "Shampoo", cat: "Banheiro", preco: 13.99, emoji: "🧴" },
+  { id: 38, nome: "Sabonete", cat: "Banheiro", preco: 3.49, precoOferta: 2.49, emoji: "🧼" },
+  { id: 39, nome: "Condicionador", cat: "Banheiro", preco: 14.99, emoji: "🚿" },
+  { id: 40, nome: "Creme dental", cat: "Banheiro", preco: 6.99, emoji: "🪥" },
+  { id: 41, nome: "Banheira para bebê", cat: "Banheiro", preco: 89.90, emoji: "🛁" },
+  { id: 42, nome: "Toalha de bebê", cat: "Banheiro", preco: 29.90, imagem: "toalhadebebe.png" },
+  { id: 43, nome: "Shampoo para bebê", cat: "Banheiro", preco: 16.90, emoji: "🧴" },
+  { id: 44, nome: "Sabonete para bebê", cat: "Banheiro", preco: 5.90, emoji: "🧼" },
 
-  {id:45,nome:"Pão francês",cat:"Padaria",preco:1.20,emoji:"🥖"},
-  {id:46,nome:"Bolo de chocolate",cat:"Padaria",preco:24.90,emoji:"🍰"},
-  {id:47,nome:"Croissant",cat:"Padaria",preco:7.50,emoji:"🥐"},
-  {id:48,nome:"Biscoito",cat:"Padaria",preco:4.49,precoOferta:3.49,emoji:"🍪"},
-  {id:49,nome:"Cookie",cat:"Padaria",preco:5.49,emoji:"🍪"},
-  {id:50,nome:"Panqueca",cat:"Padaria",preco:9.90,emoji:"🥞"},
-  {id:51,nome:"Pretzel",cat:"Padaria",preco:7.90,emoji:"🥨"},
-  {id:52,nome:"Hambúrguer",cat:"Padaria",preco:12.90,emoji:"🍔"},
-  {id:53,nome:"Batata frita",cat:"Padaria",preco:9.90,emoji:"🍟"},
-  {id:54,nome:"Rosquinha",cat:"Padaria",preco:6.90,emoji:"🍩"},
-  {id:55,nome:"Pudim",cat:"Padaria",preco:8.90,emoji:"🍮"},
-  {id:56,nome:"Bolo tradicional",cat:"Padaria",preco:14.90,emoji:"🥮"},
+  { id: 45, nome: "Pão francês", cat: "Padaria", preco: 1.20, emoji: "🥖" },
+  { id: 46, nome: "Bolo de chocolate", cat: "Padaria", preco: 24.90, emoji: "🍰" },
+  { id: 47, nome: "Croissant", cat: "Padaria", preco: 7.50, emoji: "🥐" },
+  { id: 48, nome: "Biscoito", cat: "Padaria", preco: 4.49, precoOferta: 3.49, emoji: "🍪" },
+  { id: 49, nome: "Cookie", cat: "Padaria", preco: 5.49, emoji: "🍪" },
+  { id: 50, nome: "Panqueca", cat: "Padaria", preco: 9.90, emoji: "🥞" },
+  { id: 51, nome: "Pretzel", cat: "Padaria", preco: 7.90, emoji: "🥨" },
+  { id: 52, nome: "Hambúrguer", cat: "Padaria", preco: 12.90, emoji: "🍔" },
+  { id: 53, nome: "Batata frita", cat: "Padaria", preco: 9.90, emoji: "🍟" },
+  { id: 54, nome: "Rosquinha", cat: "Padaria", preco: 6.90, emoji: "🍩" },
+  { id: 55, nome: "Pudim", cat: "Padaria", preco: 8.90, emoji: "🍮" },
+  { id: 56, nome: "Bolo tradicional", cat: "Padaria", preco: 14.90, emoji: "🥮" },
 
-  {id:57,nome:"Arroz 5kg",cat:"Mercearia",preco:28.90,emoji:"🍚"},
-  {id:58,nome:"Feijão 1kg",cat:"Mercearia",preco:8.90,emoji:"🫘"},
-  {id:59,nome:"Macarrão",cat:"Mercearia",preco:4.99,precoOferta:3.99,emoji:"🍝"},
-  {id:60,nome:"Ovos",cat:"Mercearia",preco:12.90,emoji:"🥚"},
-  {id:61,nome:"Mel",cat:"Mercearia",preco:18.90,emoji:"🍯"},
-  {id:62,nome:"Queijo",cat:"Mercearia",preco:15.90,emoji:"🧀"},
-  {id:63,nome:"Chocolate",cat:"Mercearia",preco:7.90,emoji:"🍫"},
-  {id:64,nome:"Sal",cat:"Mercearia",preco:3.49,precoOferta:2.49,emoji:"🧂"},
-  {id:65,nome:"Manteiga",cat:"Mercearia",preco:9.90,emoji:"🧈"},
-  {id:66,nome:"Pipoca",cat:"Mercearia",preco:5.49,emoji:"🍿"},
+  { id: 57, nome: "Arroz 5kg", cat: "Mercearia", preco: 28.90, emoji: "🍚" },
+  { id: 58, nome: "Feijão 1kg", cat: "Mercearia", preco: 8.90, emoji: "🫘" },
+  { id: 59, nome: "Macarrão", cat: "Mercearia", preco: 4.99, precoOferta: 3.99, emoji: "🍝" },
+  { id: 60, nome: "Ovos", cat: "Mercearia", preco: 12.90, emoji: "🥚" },
+  { id: 61, nome: "Mel", cat: "Mercearia", preco: 18.90, emoji: "🍯" },
+  { id: 62, nome: "Queijo", cat: "Mercearia", preco: 15.90, emoji: "🧀" },
+  { id: 63, nome: "Chocolate", cat: "Mercearia", preco: 7.90, emoji: "🍫" },
+  { id: 64, nome: "Sal", cat: "Mercearia", preco: 3.49, precoOferta: 2.49, emoji: "🧂" },
+  { id: 65, nome: "Manteiga", cat: "Mercearia", preco: 9.90, emoji: "🧈" },
+  { id: 66, nome: "Pipoca", cat: "Mercearia", preco: 5.49, emoji: "🍿" },
 
-  {id:67,nome:"Ração para cachorro",cat:"Pet",preco:69.90,emoji:"🐶"},
-  {id:68,nome:"Ração para gato",cat:"Pet",preco:49.90,emoji:"🐱"},
-  {id:69,nome:"Ração para coelho",cat:"Pet",preco:29.90,emoji:"🐰"},
-  {id:70,nome:"Ração para pássaros",cat:"Pet",preco:18.90,emoji:"🐦"},
-  {id:71,nome:"Ração para peixes",cat:"Pet",preco:24.90,emoji:"🐠"},
-  {id:72,nome:"Aquário pequeno",cat:"Pet",preco:79.90,emoji:"🐟"},
+  { id: 67, nome: "Ração para cachorro", cat: "Pet", preco: 69.90, emoji: "🐶" },
+  { id: 68, nome: "Ração para gato", cat: "Pet", preco: 49.90, emoji: "🐱" },
+  { id: 69, nome: "Ração para coelho", cat: "Pet", preco: 29.90, emoji: "🐰" },
+  { id: 70, nome: "Ração para pássaros", cat: "Pet", preco: 18.90, emoji: "🐦" },
+  { id: 71, nome: "Ração para peixes", cat: "Pet", preco: 24.90, emoji: "🐠" },
+  { id: 72, nome: "Aquário pequeno", cat: "Pet", preco: 79.90, emoji: "🐟" },
 
-  {id:73,nome:"Banana",cat:"Frutas",preco:5.49,emoji:"🍌"},
-  {id:74,nome:"Banana Prata",cat:"Frutas",preco:6.49,emoji:"🍌"},
-  {id:75,nome:"Uva",cat:"Frutas",preco:9.90,emoji:"🍇"},
-  {id:76,nome:"Morango",cat:"Frutas",preco:11.90,emoji:"🍓"},
-  {id:77,nome:"Mamão",cat:"Frutas",preco:9.90,emoji:"🍈"},
-  {id:78,nome:"Manga",cat:"Frutas",preco:8.90,emoji:"🥭"},
+  { id: 73, nome: "Banana", cat: "Frutas", preco: 5.49, emoji: "🍌" },
+  { id: 74, nome: "Banana Prata", cat: "Frutas", preco: 6.49, emoji: "🍌" },
+  { id: 75, nome: "Uva", cat: "Frutas", preco: 9.90, emoji: "🍇" },
+  { id: 76, nome: "Morango", cat: "Frutas", preco: 11.90, emoji: "🍓" },
+  { id: 77, nome: "Mamão", cat: "Frutas", preco: 9.90, emoji: "🍈" },
+  { id: 78, nome: "Manga", cat: "Frutas", preco: 8.90, emoji: "🥭" },
 
-  {id:79,nome:"Cebola",cat:"Verduras",preco:5.49,emoji:"🧅"},
-  {id:80,nome:"Pepino",cat:"Verduras",preco:4.99,precoOferta:3.49,emoji:"🥒"},
-  {id:81,nome:"Pimentão",cat:"Verduras",preco:7.90,emoji:"🫑"},
-  {id:82,nome:"Berinjela",cat:"Verduras",preco:7.49,emoji:"🍆"},
-  {id:83,nome:"Brócolis",cat:"Verduras",preco:8.90,emoji:"🥦"},
-  {id:84,nome:"Couve-flor",cat:"Verduras",preco:9.90,emoji:"🥦"},
-  {id:85,nome:"Milho",cat:"Verduras",preco:6.49,emoji:"🌽"},
-  {id:86,nome:"Beterraba",cat:"Verduras",preco:5.90,emoji:"🫜"}
+  { id: 79, nome: "Cebola", cat: "Verduras", preco: 5.49, emoji: "🧅" },
+  { id: 80, nome: "Pepino", cat: "Verduras", preco: 4.99, precoOferta: 3.49, emoji: "🥒" },
+  { id: 81, nome: "Pimentão", cat: "Verduras", preco: 7.90, emoji: "🫑" },
+  { id: 82, nome: "Berinjela", cat: "Verduras", preco: 7.49, emoji: "🍆" },
+  { id: 83, nome: "Brócolis", cat: "Verduras", preco: 8.90, emoji: "🥦" },
+  { id: 84, nome: "Couve-flor", cat: "Verduras", preco: 9.90, emoji: "🥦" },
+  { id: 85, nome: "Milho", cat: "Verduras", preco: 6.49, emoji: "🌽" },
+  { id: 86, nome: "Beterraba", cat: "Verduras", preco: 5.90, emoji: "🫜" }
 
 ];
 
@@ -111,7 +111,7 @@ let favoritos =
    FAVORITOS
 ========================= */
 
-function salvarFavoritos(){
+function salvarFavoritos() {
 
   localStorage.setItem(
     "favoritosMercado",
@@ -122,27 +122,27 @@ function salvarFavoritos(){
 }
 
 
-function atualizarContadorFavoritos(){
+function atualizarContadorFavoritos() {
 
   const contador =
     document.getElementById("contadorFavoritos");
 
-  if(contador){
+  if (contador) {
     contador.textContent = favoritos.length;
   }
 }
 
 
-function alternarFavorito(id){
+function alternarFavorito(id) {
 
-  if(favoritos.includes(id)){
+  if (favoritos.includes(id)) {
 
     favoritos =
       favoritos.filter(f => f !== id);
 
     toast("Produto removido dos favoritos 🤍");
 
-  }else{
+  } else {
 
     favoritos.push(id);
 
@@ -152,16 +152,16 @@ function alternarFavorito(id){
 
   salvarFavoritos();
 
-  if(
+  if (
     document
       .getElementById("titulo")
       .textContent
       .includes("Meus favoritos")
-  ){
+  ) {
 
     mostrarFavoritos();
 
-  }else{
+  } else {
 
     mostrar(listaAtual);
 
@@ -170,7 +170,7 @@ function alternarFavorito(id){
 }
 
 
-function mostrarFavoritos(){
+function mostrarFavoritos() {
 
   const lista =
     produtos.filter(p => favoritos.includes(p.id));
@@ -197,7 +197,7 @@ function mostrarFavoritos(){
 let listaAtual = produtos;
 
 
-function moeda(valor){
+function moeda(valor) {
 
   return valor.toLocaleString(
     "pt-BR",
@@ -210,7 +210,7 @@ function moeda(valor){
 }
 
 
-function mostrar(lista = produtos){
+function mostrar(lista = produtos) {
 
   listaAtual = lista;
 
@@ -218,7 +218,7 @@ function mostrar(lista = produtos){
     document.getElementById("produtos");
 
 
-  if(!lista.length){
+  if (!lista.length) {
 
     area.innerHTML = `
       <div class="empty-favorites glass">
@@ -250,40 +250,39 @@ function mostrar(lista = produtos){
 
       <article class="card">
 
-        ${
-          p.precoOferta
-            ? `<span class="badge">🏷️ OFERTA</span>`
-            : ""
-        }
+        ${p.precoOferta
+        ? `<span class="badge">🏷️ OFERTA</span>`
+        : ""
+      }
 
 
         <button
-          class="favorite-btn ${
-            favoritos.includes(p.id)
-              ? "active"
-              : ""
-          }"
+          class="favorite-btn ${favoritos.includes(p.id)
+        ? "active"
+        : ""
+      }"
 
           onclick="alternarFavorito(${p.id})"
 
-          title="${
-            favoritos.includes(p.id)
-              ? "Remover dos favoritos"
-              : "Adicionar aos favoritos"
-          }">
+          title="${favoritos.includes(p.id)
+        ? "Remover dos favoritos"
+        : "Adicionar aos favoritos"
+      }">
 
-          ${
-            favoritos.includes(p.id)
-              ? "❤️"
-              : "🤍"
-          }
+          ${favoritos.includes(p.id)
+        ? "❤️"
+        : "🤍"
+      }
 
         </button>
 
 
         <div class="product-img">
-          ${p.emoji}
-        </div>
+  ${p.imagem
+        ? `<img src="${p.imagem}" alt="${p.nome}">`
+        : p.emoji
+      }
+</div>
 
 
         <div class="category">
@@ -298,10 +297,9 @@ function mostrar(lista = produtos){
 
         <div class="price">
 
-          ${
-            p.precoOferta
+          ${p.precoOferta
 
-              ? `
+        ? `
                 <span class="preco-antigo">
                   ${moeda(p.preco)}
                 </span>
@@ -311,8 +309,8 @@ function mostrar(lista = produtos){
                 </span>
               `
 
-              : moeda(p.preco)
-          }
+        : moeda(p.preco)
+      }
 
         </div>
 
@@ -341,16 +339,16 @@ function mostrar(lista = produtos){
    CATEGORIAS
 ========================= */
 
-function filtrar(cat){
+function filtrar(cat) {
 
   let lista;
 
 
-  if(cat === "Todos"){
+  if (cat === "Todos") {
 
     lista = produtos;
 
-  }else{
+  } else {
 
     lista =
       produtos.filter(
@@ -384,7 +382,7 @@ function filtrar(cat){
    CORES DO FUNDO
 ========================= */
 
-function mudarFundo(cat){
+function mudarFundo(cat) {
 
   const cores = {
 
@@ -464,7 +462,7 @@ function mudarFundo(cat){
    BUSCA
 ========================= */
 
-function buscar(){
+function buscar() {
 
   const termo =
     document
@@ -505,7 +503,7 @@ document
     "keydown",
     e => {
 
-      if(e.key === "Enter"){
+      if (e.key === "Enter") {
         buscar();
       }
 
@@ -517,7 +515,7 @@ document
    CARRINHO
 ========================= */
 
-function adicionar(id){
+function adicionar(id) {
 
   const item =
     carrinho.find(
@@ -525,11 +523,11 @@ function adicionar(id){
     );
 
 
-  if(item){
+  if (item) {
 
     item.qtd++;
 
-  }else{
+  } else {
 
     carrinho.push({
       id: id,
@@ -548,7 +546,7 @@ function adicionar(id){
 }
 
 
-function salvar(){
+function salvar() {
 
   localStorage.setItem(
     "carrinhoMercado",
@@ -560,7 +558,7 @@ function salvar(){
 }
 
 
-function atualizarContador(){
+function atualizarContador() {
 
   document.getElementById("contador")
     .textContent =
@@ -572,7 +570,7 @@ function atualizarContador(){
 }
 
 
-function abrirCarrinho(){
+function abrirCarrinho() {
 
   document
     .getElementById("modal")
@@ -584,12 +582,12 @@ function abrirCarrinho(){
 }
 
 
-function fecharCarrinho(e){
+function fecharCarrinho(e) {
 
-  if(
+  if (
     !e ||
     e.target.id === "modal"
-  ){
+  ) {
 
     document
       .getElementById("modal")
@@ -601,7 +599,7 @@ function fecharCarrinho(e){
 }
 
 
-function alterar(id, delta){
+function alterar(id, delta) {
 
   const item =
     carrinho.find(
@@ -609,13 +607,13 @@ function alterar(id, delta){
     );
 
 
-  if(!item) return;
+  if (!item) return;
 
 
   item.qtd += delta;
 
 
-  if(item.qtd <= 0){
+  if (item.qtd <= 0) {
 
     carrinho =
       carrinho.filter(
@@ -632,7 +630,7 @@ function alterar(id, delta){
 }
 
 
-function renderCarrinho(){
+function renderCarrinho() {
 
   const area =
     document.getElementById(
@@ -640,7 +638,7 @@ function renderCarrinho(){
     );
 
 
-  if(!carrinho.length){
+  if (!carrinho.length) {
 
     area.innerHTML =
       "<p>Seu carrinho está vazio. Adicione alguns produtos! 😊</p>";
@@ -726,9 +724,9 @@ function renderCarrinho(){
 }
 
 
-function finalizarCompra(){
+function finalizarCompra() {
 
-  if(!carrinho.length){
+  if (!carrinho.length) {
 
     toast(
       "Adicione produtos primeiro."
@@ -757,7 +755,7 @@ function finalizarCompra(){
    NOTIFICAÇÃO
 ========================= */
 
-function toast(msg){
+function toast(msg) {
 
   const t =
     document.getElementById("toast");
@@ -796,7 +794,7 @@ let usuarioLogado =
   );
 
 
-function abrirLogin(){
+function abrirLogin() {
 
   document
     .getElementById("loginModal")
@@ -808,12 +806,12 @@ function abrirLogin(){
 }
 
 
-function fecharLogin(e){
+function fecharLogin(e) {
 
-  if(
+  if (
     !e ||
     e.target.id === "loginModal"
-  ){
+  ) {
 
     document
       .getElementById("loginModal")
@@ -825,7 +823,7 @@ function fecharLogin(e){
 }
 
 
-function alternarCadastro(){
+function alternarCadastro() {
 
   const loginForm =
     document.getElementById(
@@ -898,7 +896,7 @@ function alternarCadastro(){
 }
 
 
-function criarConta(e){
+function criarConta(e) {
 
   e.preventDefault();
 
@@ -924,11 +922,11 @@ function criarConta(e){
     ).value;
 
 
-  if(
+  if (
     contas.some(
       c => c.email === email
     )
-  ){
+  ) {
 
     toast(
       "Este e-mail já está cadastrado."
@@ -980,7 +978,7 @@ function criarConta(e){
 }
 
 
-function entrarConta(e){
+function entrarConta(e) {
 
   e.preventDefault();
 
@@ -1009,7 +1007,7 @@ function entrarConta(e){
     );
 
 
-  if(!conta){
+  if (!conta) {
 
     toast(
       "E-mail ou senha incorretos."
@@ -1048,7 +1046,7 @@ function entrarConta(e){
 }
 
 
-function atualizarTelaConta(){
+function atualizarTelaConta() {
 
   const texto =
     document.getElementById(
@@ -1056,7 +1054,7 @@ function atualizarTelaConta(){
     );
 
 
-  if(!texto) return;
+  if (!texto) return;
 
 
   texto.textContent =
@@ -1065,6 +1063,116 @@ function atualizarTelaConta(){
       : "Entrar";
 
 }
+
+/* =========================
+   CARROSSEL DE OFERTAS
+========================= */
+
+const ofertas = produtos.filter(
+  p => p.precoOferta
+);
+
+let ofertaAtual = 0;
+
+
+function mostrarOferta() {
+
+  if (!ofertas.length) return;
+
+  const produto =
+    ofertas[ofertaAtual];
+
+
+  document.getElementById("ofertaEmoji")
+    .textContent = produto.emoji;
+
+
+  document.getElementById("ofertaNome")
+    .textContent = produto.nome;
+
+
+  document.getElementById("ofertaPrecoAntigo")
+    .textContent = moeda(produto.preco);
+
+
+  document.getElementById("ofertaPreco")
+    .textContent = moeda(produto.precoOferta);
+
+
+  const indicadores =
+    document.getElementById("indicadores");
+
+
+  indicadores.innerHTML =
+    ofertas.map((_, index) => `
+
+      <button
+        class="${index === ofertaAtual
+        ? "ativo"
+        : ""
+      }"
+        onclick="irParaOferta(${index})">
+      </button>
+
+    `).join("");
+
+}
+
+
+function mudarOferta(direcao) {
+
+  ofertaAtual += direcao;
+
+
+  if (ofertaAtual >= ofertas.length) {
+    ofertaAtual = 0;
+  }
+
+
+  if (ofertaAtual < 0) {
+    ofertaAtual = ofertas.length - 1;
+  }
+
+
+  mostrarOferta();
+
+}
+
+
+function irParaOferta(index) {
+
+  ofertaAtual = index;
+
+  mostrarOferta();
+
+}
+
+
+function adicionarOferta() {
+
+  if (!ofertas.length) return;
+
+  const produto =
+    ofertas[ofertaAtual];
+
+
+  adicionar(produto.id);
+
+}
+
+
+/* Troca automática */
+
+setInterval(() => {
+
+  mudarOferta(1);
+
+}, 5000);
+
+
+/* Inicia o carrossel */
+
+mostrarOferta();
 
 
 /* =========================
