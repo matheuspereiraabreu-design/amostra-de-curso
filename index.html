@@ -4,20 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Mercado Mix</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+  <!-- =========================
+       CABEÇALHO
+  ========================== -->
+
   <header class="glass">
 
- <div class="logo">
-  <img src="logo.png" alt="Mercado Mix">
-</div>
+    <div class="logo">
+      <img src="logo.png" alt="Mercado Mix">
+    </div>
 
     <div class="search">
-      <input id="busca" type="text" placeholder="Buscar produtos...">
+      <input
+        id="busca"
+        type="text"
+        placeholder="Buscar produtos..."
+      >
 
       <button onclick="buscar()">
         🔎
@@ -36,111 +46,126 @@
   </header>
 
 
-  <!-- CATEGORIAS -->
+  <!-- =========================
+       ABAS PRINCIPAIS
+  ========================== -->
 
-  <nav class="categories glass">
+  <nav class="main-tabs glass">
 
-    <button onclick="filtrar('Todos')">
-      Todos
+    <button
+      id="tab-Mercado"
+      class="main-tab active"
+      onclick="abrirAba('Mercado')">
+      🛒 Mercado
     </button>
 
-    <button onclick="mostrarFavoritos()">
-      ❤️ Favoritos
-      <span id="contadorFavoritos">0</span>
+    <button
+      id="tab-Esportes"
+      class="main-tab"
+      onclick="abrirAba('Esportes')">
+      ⚽ Esportes
     </button>
 
-    <button onclick="filtrar('Frutas')">
-      🍎 Frutas
+    <button
+      id="tab-Roupas"
+      class="main-tab"
+      onclick="abrirAba('Roupas')">
+      👕 Roupas
     </button>
 
-    <button onclick="filtrar('Verduras')">
-      🥬 Verduras
+    <button
+      id="tab-Eletrônicos"
+      class="main-tab"
+      onclick="abrirAba('Eletrônicos')">
+      📱 Eletrônicos
     </button>
 
-    <button onclick="filtrar('Carnes')">
-      🥩 Carnes
-    </button>
-
-    <button onclick="filtrar('Bebidas')">
-      🥤 Bebidas
-    </button>
-
-    <button onclick="filtrar('Limpeza')">
-      🧹 Limpeza
-    </button>
-
-    <button onclick="filtrar('Banheiro')">
-      🚿 Banheiro
-    </button>
-
-    <button onclick="filtrar('Padaria')">
-      🥖 Padaria
-    </button>
-
-    <button onclick="filtrar('Mercearia')">
-      🛍️ Mercearia
-    </button>
-
-    <button onclick="filtrar('Pet')">
-      🐶 Pet
+    <button
+      id="tab-Casa"
+      class="main-tab"
+      onclick="abrirAba('Casa')">
+      🏠 Casa
     </button>
 
   </nav>
 
 
+  <!-- =========================
+       SUBCATEGORIAS
+  ========================== -->
+
+  <nav id="subcategorias" class="categories glass"></nav>
+
+
+  <!-- =========================
+       CONTEÚDO
+  ========================== -->
+
   <main>
+
+    <!-- CARROSSEL DE OFERTAS -->
 
     <section class="hero glass">
 
-  <button class="carousel-btn prev" onclick="mudarOferta(-1)">
-    ❮
-  </button>
+      <button
+        class="carousel-btn prev"
+        onclick="mudarOferta(-1)">
+        ❮
+      </button>
 
-  <div class="carousel-content">
+      <div class="carousel-content">
 
-    <p class="tag">
-      🏷️ OFERTA ESPECIAL
-    </p>
+        <p class="tag">
+          🏷️ OFERTA ESPECIAL
+        </p>
 
-    <div id="ofertaEmoji" class="oferta-emoji">
-      🥬
-    </div>
+        <div id="ofertaEmoji" class="oferta-emoji">
+          🥬
+        </div>
 
-    <h1 id="ofertaNome">
-      Alface
-    </h1>
+        <h1 id="ofertaNome">
+          Alface
+        </h1>
 
-    <div class="oferta-precos">
+        <div class="oferta-precos">
 
-      <span id="ofertaPrecoAntigo" class="preco-antigo">
-        R$ 3,99
-      </span>
+          <span
+            id="ofertaPrecoAntigo"
+            class="preco-antigo">
+            R$ 3,99
+          </span>
 
-      <span id="ofertaPreco" class="preco-oferta">
-        R$ 2,99
-      </span>
+          <span
+            id="ofertaPreco"
+            class="preco-oferta">
+            R$ 2,99
+          </span>
 
-    </div>
+        </div>
 
-    <button
-      id="ofertaBotao"
-      class="primary"
-      onclick="adicionarOferta()">
+        <button
+          class="primary"
+          onclick="adicionarOferta()">
+          🛒 Adicionar ao carrinho
+        </button>
 
-      🛒 Adicionar ao carrinho
+      </div>
 
-    </button>
+      <button
+        class="carousel-btn next"
+        onclick="mudarOferta(1)">
+        ❯
+      </button>
 
-  </div>
+      <div
+        id="indicadores"
+        class="indicadores">
+      </div>
 
-  <button class="carousel-btn next" onclick="mudarOferta(1)">
-    ❯
-  </button>
+    </section>
 
-  <div id="indicadores" class="indicadores"></div>
 
-</section>
-
+    <!-- TÍTULO -->
 
     <section class="section-head">
 
@@ -157,20 +182,32 @@
     </section>
 
 
-    <section id="produtos" class="grid"></section>
+    <!-- PRODUTOS -->
+
+    <section
+      id="produtos"
+      class="grid">
+    </section>
 
   </main>
 
 
-  <!-- LOGIN -->
+  <!-- =========================
+       LOGIN
+  ========================== -->
 
-  <div id="loginModal" class="modal hidden"
-       onclick="fecharLogin(event)">
+  <div
+    id="loginModal"
+    class="modal hidden"
+    onclick="fecharLogin(event)">
 
-    <div class="login glass"
-         onclick="event.stopPropagation()">
+    <div
+      class="login glass"
+      onclick="event.stopPropagation()">
 
-      <button class="close" onclick="fecharLogin()">
+      <button
+        class="close"
+        onclick="fecharLogin()">
         ✕
       </button>
 
@@ -187,9 +224,11 @@
       </p>
 
 
-      <form id="loginForm" onsubmit="entrarConta(event)">
+      <form
+        id="loginForm"
+        onsubmit="entrarConta(event)">
 
-        <label>
+        <label for="loginEmail">
           E-mail
         </label>
 
@@ -197,10 +236,9 @@
           id="loginEmail"
           type="email"
           placeholder="seu@email.com"
-          required
-        >
+          required>
 
-        <label>
+        <label for="loginSenha">
           Senha
         </label>
 
@@ -209,17 +247,20 @@
           type="password"
           placeholder="Sua senha"
           minlength="4"
-          required
-        >
+          required>
 
-        <button class="primary login-submit" type="submit">
+        <button
+          class="primary login-submit"
+          type="submit">
           Entrar
         </button>
 
       </form>
 
 
-      <button class="link-btn" onclick="alternarCadastro()">
+      <button
+        class="link-btn"
+        onclick="alternarCadastro()">
         Ainda não tenho conta
       </button>
 
@@ -236,7 +277,7 @@
         class="hidden"
         onsubmit="criarConta(event)">
 
-        <label>
+        <label for="cadNome">
           Nome
         </label>
 
@@ -244,10 +285,9 @@
           id="cadNome"
           type="text"
           placeholder="Seu nome"
-          required
-        >
+          required>
 
-        <label>
+        <label for="cadEmail">
           E-mail
         </label>
 
@@ -255,10 +295,9 @@
           id="cadEmail"
           type="email"
           placeholder="seu@email.com"
-          required
-        >
+          required>
 
-        <label>
+        <label for="cadSenha">
           Senha
         </label>
 
@@ -267,10 +306,11 @@
           type="password"
           placeholder="Crie uma senha"
           minlength="4"
-          required
-        >
+          required>
 
-        <button class="primary login-submit" type="submit">
+        <button
+          class="primary login-submit"
+          type="submit">
           Criar conta
         </button>
 
@@ -281,7 +321,9 @@
   </div>
 
 
-  <!-- CARRINHO -->
+  <!-- =========================
+       CARRINHO
+  ========================== -->
 
   <div
     id="modal"
@@ -292,7 +334,9 @@
       class="cart glass"
       onclick="event.stopPropagation()">
 
-      <button class="close" onclick="fecharCarrinho()">
+      <button
+        class="close"
+        onclick="fecharCarrinho()">
         ✕
       </button>
 
@@ -317,9 +361,7 @@
       <button
         class="primary checkout"
         onclick="finalizarCompra()">
-
         Finalizar compra
-
       </button>
 
     </div>
@@ -333,5 +375,4 @@
   <script src="script.js"></script>
 
 </body>
-
 </html>
